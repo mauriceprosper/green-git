@@ -36,5 +36,4 @@ const makeCommits = (n) => {
     simpleGit().add([path]).commit(date, { "--date": date },makeCommits.bind(this,--n));
   });
 };
-
 makeCommits(100);
